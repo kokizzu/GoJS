@@ -145,6 +145,14 @@
 
 <p>The complete list of new features is <a href="#3.1">detailed below</a>.</p>
 
+<h3 id="3.1.10">Changes for 3.1.10</h3>
+<ul>
+  <li>
+    Fixed positioning of Parts in Layers with <a>Layer.isViewportAligned</a> set to true,
+    when those parts were modified without modifying the Diagram's bounds.
+  </li>
+</ul>
+
 <h3 id="3.1.9">Changes for 3.1.9</h3>
 <ul>
   <li>
@@ -152,10 +160,12 @@
     columns so that they correctly account for space used by other rows or columns.
   </li>
   <li>
-    Fixed routing of multiple links connected with ...Side Spot ports when some have non-None <a>Link.adjusting</a>.
+    Fixed routing of multiple links connected with ...Side Spot ports when some have
+    non-None <a>Link.adjusting</a>.
   </li>
   <li>
-    Improved routing of orthogonal links and routing of no-Spot links when ports overlap, fixing regressions since 3.1.0.
+    Improved routing of orthogonal links and routing of no-Spot links when ports overlap,
+    fixing regressions since 3.1.0.
   </li>
 </ul>
 
